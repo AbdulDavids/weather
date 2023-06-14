@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="weather-widget">
+      <div class="weather-header">
+        <h1 class="weather-title">Forecast</h1>
+        <div class="dark-mode-toggle">
+          <label for="dark-mode-checkbox">Dark Mode</label>
+          <input type="checkbox" id="dark-mode-checkbox">
+        </div>
+      </div>
+      <div class="weather-content">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Enter location">
+          <button id="search-button">Search</button>
+        </div>
+        <div class="weather-info">
+          <h2 class="location"></h2>
+          <div class="current-weather">
+            <div class="temperature"></div>
+            <div class="description"></div>
+          </div>
+          <div class="additional-info">
+            <div class="info-item">
+              <p class="info-label">Feels Like</p>
+              <p class="info-value feels-like"></p>
+              <span class="value-type">°C</span>
+            </div>
+            <div class="info-item">
+              <p class="info-label">Humidity</p>
+              <p class="info-value humidity"></p>
+              <span class="value-type">%</span>
+            </div>
+            <div class="info-item">
+              <p class="info-label">Wind Speed</p>
+              <p class="info-value wind-speed"></p>
+              <span class="value-type">km/h</span>
+            </div>
+            <div class="info-item">
+              <p class="info-label">Wind Direction</p>
+              <p class="info-value wind-direction"></p>
+            </div>
+            <div class="info-item">
+              <p class="info-label">Pressure</p>
+              <p class="info-value pressure"></p>
+              <span class="value-type">hPa</span>
+            </div>
+            <div class="info-item">
+              <p class="info-label">Cloud Coverage</p>
+              <p class="info-value cloud-coverage"></p>
+              <span class="value-type">%</span>
+            </div>
+            <div class="info-item">
+              <p class="info-label">Precipitation</p>
+              <p class="info-value precipitation"></p>
+              <span class="value-type">mm</span>
+            </div>
+            <div class="info-item">
+              <p class="info-label">UV Index</p>
+              <p class="info-value uv-index"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
